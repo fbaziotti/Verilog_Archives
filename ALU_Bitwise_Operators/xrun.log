@@ -1,0 +1,27 @@
+xrun: 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.09-s001: Started on May 18, 2025 at 18:27:13 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+	Top level design units:
+		bitwise_operators_tb
+Loading snapshot worklib.bitwise_operators_tb:sv .................... Done
+xcelium> source /xcelium23.09/tools/xcelium/files/xmsimrc
+xcelium> run
+Time=0 | x=xxxxxxxx, y=xxxxxxxx, op_code=xxx, result=xxxxxxxx
+Time=1000 | x=00010101, y=11000111, op_code=000, result=00000101
+Time=2000 | x=00010101, y=11000111, op_code=001, result=11111010
+Time=3000 | x=10010101, y=01101111, op_code=010, result=11111111
+Time=4000 | x=10010101, y=01101111, op_code=011, result=00000000
+Time=5000 | x=01011001, y=01101100, op_code=100, result=00110101
+Time=6000 | x=01011001, y=01101100, op_code=101, result=11001010
+Time=7000 | x=01101100, y=01101100, op_code=101, result=11111111
+Simulation complete via $finish(1) at time 8 NS + 0
+./testbench.sv:49         $finish;
+xcelium> exit
+TOOL:	xrun	23.09-s001: Exiting on May 18, 2025 at 18:27:14 EDT  (total: 00:00:01)

@@ -1,0 +1,84 @@
+$date
+    May 18, 2025  18:27:14
+$end
+$version
+    TOOL:	xmsim	23.09-s001
+$end
+$timescale
+    1 ps
+$end
+
+$scope module bitwise_operators_tb $end
+$var reg       8 !    x [7:0] $end
+$var reg       8 "    y [7:0] $end
+$var reg       8 #    result [7:0] $end
+$var reg       3 $    op_code [2:0] $end
+
+$scope module uut $end
+$var wire      8 %    x [7:0] $end
+$var wire      8 &    y [7:0] $end
+$var reg       8 '    result [7:0] $end
+$var wire      3 (    op_code [2:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+bx !
+bx "
+bx #
+bx $
+bx %
+bx &
+bx '
+bx (
+$end
+#1000
+b10101 !
+b11000111 "
+b0 $
+b0 (
+b11000111 &
+b10101 %
+b101 '
+b101 #
+#2000
+b1 $
+b1 (
+b11111010 '
+b11111010 #
+#3000
+b10010101 !
+b1101111 "
+b10 $
+b10 (
+b1101111 &
+b10010101 %
+b11111111 '
+b11111111 #
+#4000
+b11 $
+b11 (
+b0 '
+b0 #
+#5000
+b1011001 !
+b1101100 "
+b100 $
+b100 (
+b1101100 &
+b1011001 %
+b110101 '
+b110101 #
+#6000
+b101 $
+b101 (
+b11001010 '
+b11001010 #
+#7000
+b1101100 !
+b1101100 %
+b11111111 '
+b11111111 #
+#8000

@@ -1,0 +1,48 @@
+$date
+    May 18, 2025  15:04:57
+$end
+$version
+    TOOL:	xmsim	23.09-s001
+$end
+$timescale
+    1 ps
+$end
+
+$scope module tb_muxNx1 $end
+$var parameter 32 !    N $end
+$var reg       4 "    in [3:0] $end
+$var reg       2 #    sel [1:0] $end
+$var wire      1 $    out  $end
+
+$scope module uut $end
+$var parameter 32 %    N $end
+$var wire      4 &    in [3:0] $end
+$var wire      2 '    sel [1:0] $end
+$var wire      1 $    out  $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b100 %
+b100 !
+b1010 "
+b0 #
+0$
+b1010 &
+b0 '
+$end
+#10000
+b1 #
+b1 '
+1$
+#20000
+b10 #
+b10 '
+0$
+#30000
+b11 #
+b11 '
+1$
+#40000
