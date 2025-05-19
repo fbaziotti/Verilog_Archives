@@ -1,2 +1,2 @@
 # Verilog_Archives
-Depositório com arquivos Verlig HDL - Arquivos de exercícios do programa CI Digital
+Depositório com arquivos Verilog HDL - Arquivos de exercícios do programa CI Digital
