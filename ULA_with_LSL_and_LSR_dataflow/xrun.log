@@ -1,0 +1,26 @@
+xrun: 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.09-s001: Started on Aug 24, 2025 at 14:03:34 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+	Top level design units:
+		tb_ula_dataflow
+Loading snapshot worklib.tb_ula_dataflow:sv .................... Done
+xcelium> source /xcelium23.09/tools/xcelium/files/xmsimrc
+xcelium> run
+Time=0, A=1010, B=0101, S=000, R=0000
+Time=10, A=1010, B=0101, S=001, R=1111
+Time=20, A=1010, B=0101, S=010, R=0101
+Time=30, A=1010, B=0101, S=011, R=1111
+Time=40, A=1010, B=0101, S=100, R=1111
+Time=50, A=1010, B=0101, S=101, R=0101
+Time=60, A=1010, B=0101, S=110, R=0100
+Time=70, A=1010, B=0101, S=111, R=0101
+Simulation stopped via $stop(1) at time 80 NS + 0
+./testbench.sv:35     $stop;
+xcelium> TOOL:	xrun	23.09-s001: Exiting on Aug 24, 2025 at 14:03:35 EDT  (total: 00:00:01)

@@ -1,0 +1,79 @@
+$date
+    Aug 24, 2025  14:03:35
+$end
+$version
+    TOOL:	xmsim	23.09-s001
+$end
+$timescale
+    1 ns
+$end
+
+$scope module tb_ula_dataflow $end
+$var reg       4 !    A [3:0] $end
+$var reg       4 "    B [3:0] $end
+$var reg       3 #    S [2:0] $end
+$var wire      4 $    R [3:0] $end
+
+$scope module uut $end
+$var wire      4 %    A [3:0] $end
+$var wire      4 &    B [3:0] $end
+$var wire      3 '    S [2:0] $end
+$var wire      4 $    R [3:0] $end
+$var wire      4 (    op_and [3:0] $end
+$var wire      4 )    op_or [3:0] $end
+$var wire      4 *    op_not [3:0] $end
+$var wire      4 +    op_nand [3:0] $end
+$var wire      4 ,    op_sum [3:0] $end
+$var wire      4 -    op_sub [3:0] $end
+$var wire      4 .    op_lsl [3:0] $end
+$var wire      4 /    op_lsr [3:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b1010 !
+b101 "
+b0 #
+b0 $
+b1010 %
+b101 &
+b0 '
+b0 (
+b1111 )
+b101 *
+b1111 +
+b1111 ,
+b101 -
+b100 .
+b101 /
+$end
+#10
+b1 #
+b1 '
+b1111 $
+#20
+b10 #
+b10 '
+b101 $
+#30
+b11 #
+b11 '
+b1111 $
+#40
+b100 #
+b100 '
+#50
+b101 #
+b101 '
+b101 $
+#60
+b110 #
+b110 '
+b100 $
+#70
+b111 #
+b111 '
+b101 $
+#80
