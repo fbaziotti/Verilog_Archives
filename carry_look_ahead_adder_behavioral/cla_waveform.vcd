@@ -1,0 +1,90 @@
+$date
+    Aug 24, 2025  14:25:41
+$end
+$version
+    TOOL:	xmsim	23.09-s001
+$end
+$timescale
+    1 ns
+$end
+
+$scope module tb_carry_look_ahead_adder $end
+$var reg       4 !    A [3:0] $end
+$var reg       4 "    B [3:0] $end
+$var reg       1 #    Cin $end
+$var wire      4 $    S [3:0] $end
+$var wire      1 %    Cout  $end
+
+$scope module uut $end
+$var wire      4 &    A [3:0] $end
+$var wire      4 '    B [3:0] $end
+$var wire      1 (    Cin  $end
+$var wire      4 $    S [3:0] $end
+$var wire      1 %    Cout  $end
+$var wire      4 )    G [3:0] $end
+$var wire      4 *    P [3:0] $end
+$var wire      5 +    C [4:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b11 !
+b10 "
+0#
+b101 $
+0%
+b11 &
+b10 '
+0(
+b10 )
+b1 *
+b100 +
+$end
+#10
+b111 !
+b1000 "
+b1000 '
+b111 &
+b0 )
+b1111 *
+b1011 $
+b0 +
+b1111 $
+#20
+b1111 !
+b1 "
+b1 '
+b1111 &
+b1 )
+b1110 *
+b1110 $
+b11110 +
+b0 $
+1%
+#30
+b101 !
+b1001 "
+1#
+1(
+b1001 '
+b101 &
+b1100 *
+b11111 +
+b11 +
+b11 $
+b1111 $
+0%
+#40
+b1111 !
+b1111 "
+b1111 '
+b1111 &
+b1111 )
+b0 *
+b11 $
+b11111 +
+b1111 $
+1%
+#50

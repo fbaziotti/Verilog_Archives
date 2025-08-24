@@ -1,0 +1,25 @@
+xrun: 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.09-s001: Started on Aug 24, 2025 at 14:25:40 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+	Top level design units:
+		tb_carry_look_ahead_adder
+Loading snapshot worklib.tb_carry_look_ahead_adder:sv .................... Done
+xcelium> source /xcelium23.09/tools/xcelium/files/xmsimrc
+xcelium> run
+Time	A	B    Cin    |  	S	Cout
+0	0011	0010	0	|	0101	0
+10	0111	1000	0	|	1111	0
+20	1111	0001	0	|	0000	1
+30	0101	1001	1	|	1111	0
+40	1111	1111	1	|	1111	1
+Simulation complete via $finish(1) at time 50 NS + 0
+./testbench.sv:41     $finish;
+xcelium> exit
+TOOL:	xrun	23.09-s001: Exiting on Aug 24, 2025 at 14:25:41 EDT  (total: 00:00:01)
