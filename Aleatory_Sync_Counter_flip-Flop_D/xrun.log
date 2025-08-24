@@ -1,0 +1,39 @@
+xrun: 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.09-s001: Started on Aug 24, 2025 at 13:54:33 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+	Top level design units:
+		tb_counter_d_3x8_aleatory
+Loading snapshot worklib.tb_counter_d_3x8_aleatory:sv .................... Done
+xcelium> source /xcelium23.09/tools/xcelium/files/xmsimrc
+xcelium> run
+t=0 ns, reset=0, led=xxx
+t=15 ns, reset=1, led=000
+t=25 ns, reset=0, led=100
+t=35 ns, reset=0, led=001
+t=45 ns, reset=0, led=110
+t=55 ns, reset=0, led=101
+t=65 ns, reset=0, led=010
+t=75 ns, reset=0, led=011
+t=85 ns, reset=0, led=111
+t=95 ns, reset=0, led=000
+t=105 ns, reset=0, led=100
+t=115 ns, reset=0, led=001
+t=125 ns, reset=0, led=110
+t=135 ns, reset=0, led=101
+t=145 ns, reset=0, led=010
+t=155 ns, reset=0, led=011
+t=165 ns, reset=0, led=111
+t=175 ns, reset=0, led=000
+t=185 ns, reset=0, led=100
+t=195 ns, reset=0, led=001
+Simulation complete via $finish(1) at time 200 NS + 0
+./testbench.sv:32     $finish;
+xcelium> exit
+TOOL:	xrun	23.09-s001: Exiting on Aug 24, 2025 at 13:54:34 EDT  (total: 00:00:01)
